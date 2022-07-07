@@ -40,4 +40,25 @@ let firstName= 'Rahulreddy'
 let lastName= 'Biski'
 firstName>lastName? console.log("firstname is greater than lastname"):console.log("lastname is greater than firstname")
  */
+//condition statements
+/* 
+let age=prompt('enter your age')
+
+if(age>=18){
+    console.log('You are hold enough to drive')
+}
+else{
+    let remaining= 18-age
+    console.log(`you are left with ${remaining} years to drive `)
+}
+ */
+/* let i=1
+switch(i){
+    case 1:
+        console.log("hello 1")
+        break;
+    default:
+        console.log("hello 2")
+} */
+
 
