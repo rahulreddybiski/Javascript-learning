@@ -181,7 +181,7 @@ console.log(wordFrequency('lol hello lol')) */
 
 //problem
 
-const savingCalculatio = (incomeAmount) => {
+/* const savingCalculatio = (incomeAmount) => {
   stratergy = {
 
   }
@@ -196,4 +196,12 @@ const savingCalculatio = (incomeAmount) => {
   return stratergy
 }
 
-console.log(savingCalculatio(10000))
+console.log(savingCalculatio(10000)) */
+
+//higher order functions
+//map
+//filter
+//reduce
+
+let result = [1,2,3,4,5].map(number => number *2 )
+console.log(result)
