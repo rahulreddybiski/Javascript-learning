@@ -76,7 +76,7 @@ dog.breed = 'human'
 
 console.log(dog.name, dog.color, dog.bark(), dog.breed) */
 
-const users = {
+/* const users = {
     Alex: {
       email: 'alex@alex.com',
       skills: ['HTML', 'CSS', 'JavaScript'],
@@ -125,6 +125,75 @@ const users = {
       age: 20,
       isLoggedIn: false,
       points: 40
+    },
+    getIsLoggedIn : function(){
+      let count=0
+      for(const point in users){
+        console.log(point)
+        console.log(point.email)
+        if(point.points>=50){
+          count= count+1;
+        }
+      }
+       return {count}
+      }
+  }
+
+console.log(users.getIsLoggedIn()) */
+/* 
+const letterFrequency = (phrase) =>{
+  //console.log(phrase)
+  let frequency ={
+
+  }
+  for(const letter of phrase){
+    //console.log(letter)
+    if(frequency.hasOwnProperty(letter)){
+      frequency[letter]+=1;
+    }
+    else{
+      frequency[letter]=1;
     }
   }
-console.log(Object.keys(users))
+  return frequency
+}
+
+//console.log(letterFrequency('Rahulreddy hgkj mnk'))
+
+const wordFrequency = (phrase) =>{
+  let frequency = {}
+  let arr = phrase.split(' ')
+  return letterFrequency(arr) */
+  /* console.log(arr)
+  for(word of arr){
+    if(word in frequency){
+      frequency[word]+=1
+    }
+    else{
+      frequency[word]=1
+    }
+  }
+
+  return frequency */
+/* }
+
+console.log(wordFrequency('lol hello lol')) */
+
+//problem
+
+const savingCalculatio = (incomeAmount) => {
+  stratergy = {
+
+  }
+  let needs = incomeAmount * (50/100)
+  let wants = incomeAmount * (30/100)
+  let savings = incomeAmount * (20/100)
+
+  stratergy.Needs = needs
+  stratergy.Wants = wants
+  stratergy.Savings = savings
+
+  return stratergy
+}
+
+console.log(savingCalculatio(10000))
