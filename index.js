@@ -198,10 +198,77 @@ console.log(wordFrequency('lol hello lol')) */
 
 console.log(savingCalculatio(10000)) */
 
-//higher order functions
+/* //higher order functions
 //map
 //filter
 //reduce
 
 let result = [1,2,3,4,5].map(number => number *2 )
 console.log(result)
+ */
+
+
+/* const callback = (n) => {
+  return n ** 2
+}
+
+// function that takes other function as a callback
+function cube(callback, n) {
+  return callback(n) * n
+}
+
+console.log(cube(callback, 3)) */
+const myDisplayer = (result) => {
+  console.log(result);
+}
+
+/* function myFirst() {
+  myDisplayer("hello!")
+}
+
+function mySecond() {
+  myDisplayer("Goodbye")
+}
+
+myFirst();
+mySecond(); */
+/* 
+function sum(a,b,callback){
+  let result = a+b;
+  callback(result);
+}
+
+sum(3,4,myDisplayer)
+
+function sub(a,b){
+  let sub=a-b;
+  console.log(sub);
+}
+
+function arthematicCalculations(a,b,myCallback){
+  let result=a+b;
+  console.log(result)
+  myCallback(a,b)
+}
+
+arthematicCalculations(3,5,sub) */
+
+// const arr = [2,3,4,5,6,7]
+
+// arr.forEach(num => console.log(num))
+
+// Map
+/* 
+const numbers = [2,3,4,5,6]
+
+const numSquares = numbers.map(element => element * element)
+
+console.log(numSquares) */
+
+// Filter
+
+const countires = ['ireland', 'india' , 'uSA', 'finland']
+
+const countriesWithLand = countires.filter((land) => land.includes('land'))
+
+console.log(countriesWithLand)
