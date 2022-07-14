@@ -266,9 +266,123 @@ const numSquares = numbers.map(element => element * element)
 console.log(numSquares) */
 
 // Filter
-
+/* 
 const countires = ['ireland', 'india' , 'uSA', 'finland']
 
 const countriesWithLand = countires.filter((land) => land.includes('land'))
 
-console.log(countriesWithLand)
+console.log(countriesWithLand) */
+
+/* const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: ' ' },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+]
+
+/* countries.forEach(country => console.log(country))
+
+
+const namesUppercase = names.map(toUpper => toUpper.toUpperCase())
+console.log(namesUppercase)
+
+const lengthcountries = countries.map(len => len.length)
+console.log(lengthcountries) */
+
+/* const first = countries.find( firstCountry => firstCountry.length==6)
+console.log(first) */
+/* let net = 0;
+const total = products.filter(available => typeof(available) === 'number').map(sum => sum.price)
+
+console.log(total) */ 
+/* 
+let actors = [
+  {name: 'rahul', networth :1500},
+  {name: 'jyothi', networth :2500},
+  {name: 'rohith', networth :1000},
+  {name: 'Bannu', networth :5500},
+]
+
+let result = actors.filter(actor => actor.networth>2000);
+console.log(result)
+
+let names = result.map(actor => actor.name).join(', ')
+
+console.log(names)
+ */
+
+/* const countries = [
+  {
+    name: 'Afghanistan',
+    capital: 'Kabul',
+    languages: ['Pashto', 'Uzbek', 'Turkmen'],
+    population: 27657145,
+    flag: 'https://restcountries.eu/data/afg.svg',
+    currency: 'Afghan afghani'
+  },
+  {
+    name: 'Åland Islands',
+    capital: 'Mariehamn',
+    languages: ['Swedish'],
+    population: 28875,
+    flag: 'https://restcountries.eu/data/ala.svg',
+    currency: 'Euro'
+  },
+  {
+    name: 'Albania',
+    capital: 'Tirana',
+    languages: ['Albanian'],
+    population: 2886026,
+    flag: 'https://restcountries.eu/data/alb.svg',
+    currency: 'Albanian lek'
+  } //...this country array reaches up to a country that starts with 'Z'
+];
+
+const alphaCountry = () =>{
+  const alphachar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  const finalObj = []
+  let alphaIndexer = 0;
+
+  while(alphaIndexer !== alphachar.length) {
+    const startWith =  countries.filter((obj) => obj.name.startsWith(alphachar[alphaIndexer]) )
+    finalObj.push({'letter': alphachar[alphaIndexer], 'count': startWith.length})
+    alphaIndexer++;
+  }
+  return finalObj;
+}
+
+console.log(alphaCountry()) */
+/* 
+let actors = [
+  {name: 'rahul', networth :1500},
+  {name: 'jyothi', networth :2500},
+  {name: 'rohith', networth :1000},
+  {name: 'Bannu', networth :5500},
+]
+
+/* const numbers = [1,2,3,4]
+
+const add = numbers.reduce((a,b) => a*b)
+
+console.log(add) */
+
+/* const totalWorth = actors.reduce((a,b) => a + b.networth,0)
+
+console.log(totalWorth)
+ */
+
+const callback = (n) => {
+  console.log(n);
+}
+
+let sum =(a,b,mycallback) => {
+  let result = a+b;
+  return mycallback(result)
+}
+
+sum(5,5,callback)
