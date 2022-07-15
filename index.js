@@ -376,7 +376,7 @@ console.log(add) */
 console.log(totalWorth)
  */
 
-const callback = (n) => {
+/* const callback = (n) => {
   console.log(n);
 }
 
@@ -385,4 +385,101 @@ let sum =(a,b,mycallback) => {
   return mycallback(result)
 }
 
-sum(5,5,callback)
+sum(5,5,callback) */
+
+// Sets
+
+/* const languages = ['telugu', 'english', 'hindi', 'english'];
+
+const setOfLanguages = new Set(languages);
+
+// console.log(setOfLanguages)
+
+// for(const language of setOfLanguages){
+//   console.log(language)
+// }
+
+setOfLanguages.add('arab')
+console.log(setOfLanguages)
+
+setOfLanguages.clear();
+console.log(setOfLanguages) */
+/* 
+let a =[1,2,3,4,5]
+let b = [3,4,5,6,7]
+
+let A = new Set(a)
+let B = new Set(b)
+
+let c = a.filter((num) => B.has(num))
+let C = new Set(c)
+
+console.log(C) */
+
+//Map 
+
+/* const map = new Map()
+
+console.log(map)
+
+countries = [
+  ['name', 'rahul'],
+  ['city', 'Hyderabad']
+]
+
+const map2 =new Map(countries);
+console.log(map2)
+ */
+const a = [4, 5, 8, 9]
+const b = [3, 4, 5, 7]
+const countries = ['Finland', 'Sweden', 'Norway']
+
+/* const set =new Set();
+
+for(let i =0; i<=10; i++){
+  set.add(i)
+}
+console.log(set)
+
+set.delete(3)
+
+console.log(set)
+
+set.clear()
+console.log(set) */
+
+/* const map = new Map();
+
+for(const country of countries){
+  map.set(country, country.length)
+}
+
+console.log(map) */
+
+let A = new Set(a);
+let B = new Set(b);
+
+
+let c = a.map((num) => b.push(num));
+
+const C = new Set(c)
+console.log(C)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
