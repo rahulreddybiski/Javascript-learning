@@ -430,9 +430,9 @@ countries = [
 const map2 =new Map(countries);
 console.log(map2)
  */
-const a = [4, 5, 8, 9]
+/* const a = [4, 5, 8, 9]
 const b = [3, 4, 5, 7]
-const countries = ['Finland', 'Sweden', 'Norway']
+const countries = ['Finland', 'Sweden', 'Norway'] */
 
 /* const set =new Set();
 
@@ -456,7 +456,7 @@ for(const country of countries){
 
 console.log(map) */
 
-let A = new Set(a);
+/* let A = new Set(a);
 let B = new Set(b);
 
 
@@ -464,22 +464,336 @@ let c = a.map((num) => b.push(num));
 
 const C = new Set(c)
 console.log(C)
+ */
+
+
+//Destructuring
+
+/* const numbers = [1,2,3]
+
+let [num1, , num3] = numbers;
+
+console.log(num1,  num3)
+ */
+/* 
+const names = [undefined, 'brrok', 'David']
+
+let [
+  firstPerson = 'rahul',
+  secondPerson,
+  ,
+  fourthPerson = 'reddy'
+] = names;
+
+console.log(firstPerson, secondPerson, fourthPerson)
+ */
+
+/* 
+const nums = [1,2,3,4,5,6,7,8,9,10]
+
+let [num1,num2, ...rest] = nums
+console.log(num1,num2);
+console.log(rest) */
+/* 
+const countries = [['Finland', 'Helsinki'], ['Sweden', 'Stockholm'], ['Norway', 'Oslo']];
+
+for(const [country,city] of countries){
+  console.log(country,city)
+}
+
+ */
+
+/* const todoList = [
+  {
+    task:'Prepare JS Test',
+    time:'4/1/2020 8:30',
+    completed:true
+  },
+  {
+    task:'Give JS Test',
+    time:'4/1/2020 10:00',
+    completed:false
+  },
+  {
+    task:'Assess Test Result',
+    time:'4/1/2020 1:00',
+    completed:false
+  }
+  ]
+
+  for(const {task, time, completed } of todoList){
+    console.log(task, time, completed)
+  } */
+
+/* 
+  const constants = [2.72, 3.14, 9.81, 37, 100]
+const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+const rectangle = {
+  width: 20,
+  height: 10,
+  area: 200,
+  perimeter: 60
+}
+const users = [
+{
+  name:'Brook',
+  scores:75,
+  skills:['HTM', 'CSS', 'JS'],
+  age:16
+},
+{
+  name:'Alex',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'David',
+  scores:75,
+  skills:['HTM', 'CSS'],
+  age:22
+},
+{
+  name:'John',
+  scores:85,
+  skills:['HTML'],
+  age:25
+},
+{
+  name:'Sara',
+  scores:95,
+  skills:['HTM', 'CSS', 'JS'],
+  age: 26
+},
+{
+  name:'Martha',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'Thomas',
+  scores:90,
+  skills:['HTM', 'CSS', 'JS'],
+  age:20
+}
+]
+
+
+const [e,pi,gravity,humanBodyTemp,waterBoilingPoint] = constants;
+
+console.log(e,pi,gravity,humanBodyTemp,waterBoilingPoint)
 
 
 
 
 
 
+ for(const {name, scores, skills, age} of users){
+      if(skills.length>2){
+        console.log(name, scores, skills, age)
+      }
+} 
 
 
 
+ */
+
+/* const students = [
+  ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+  ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+]
+let obj;
+console.log(students.length)
+function convertArrayToObject(arr){
+  
+  }
+}
+
+convertArrayToObject()
+
+ */
+
+/* const property = 'firstname'
+const name = 'Rahul'
+
+const user = {
+  name: 'Rahul',
+  age : 24,
+  male : true
+}
+
+
+console.log(user)
+
+for(key in user){
+  console.log(user[key])
+} */
+
+const users = {
+  Alex: {
+    email: 'alex@alex.com',
+    skills: ['HTML', 'CSS', 'JavaScript'],
+    age: 20,
+    isLoggedIn: false,
+    points: 30
+  },
+  Asab: {
+    email: 'asab@asab.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 25,
+    isLoggedIn: false,
+    points: 50
+  },
+  Brook: {
+    email: 'daniel@daniel.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+    age: 30,
+    isLoggedIn: true,
+    points: 50
+  },
+  Daniel: {
+    email: 'daniel@alex.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+    age: 20,
+    isLoggedIn: false,
+    points: 40
+  },
+  John: {
+    email: 'john@john.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+    age: 20,
+    isLoggedIn: true,
+    points: 50
+  },
+  Thomas: {
+    email: 'thomas@thomas.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    age: 20,
+    isLoggedIn: false,
+    points: 40
+  },
+  Paul: {
+    email: 'paul@paul.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 20,
+    isLoggedIn: false,
+    points: 40
+  }
+}
 
 
 
+/* function manySkills(obj){
+  let max=0;
+  let manySkills;
+  for(key in users){
+    if((users[key].skills.length)>max){
+        max=users[key].skills.length;
+        manySkills = key
+        
+    }
+}
+return manySkills;
+}
 
 
+console.log(manySkills(users)) */
+
+/* const manySkills = (obj) => {
+  let max =0;
+  let myskills='';
+  for(key in users){
+    if((users[key].skills.length)>max){
+        max=users[key].skills.length;
+        mySkills = key
+        
+    }
+}
+  
+  return {mySkills};
+  
+}
+
+console.log(manySkills(users)) */
+/* const user = { 
+  'name': 'Alex',
+  'address': '15th Park Avenue',
+  'age': 43,
+  'department':{
+      'name': 'Sales',
+      'Shift': 'Morning',
+      'address': {
+          'city': 'Bangalore',
+          'street': '7th Residency Rd',
+          'zip': 560001
+      }
+  }
+}
+
+const {department :  {address  : {city}}} = user;
+
+console.log(city)
+
+ */
+/* const user = { 
+  'name': 'Alex',
+  'address': '15th Park Avenue',
+  'age': 43
+}
+
+function logDetails({name, age}){
+  console.log(`${name} is ${age}`)
+}
+
+logDetails(user)
+
+const getValues = () => {
+  return{
+    'name' : 'Rahul',
+    'age' : 43
+  }
+}
+
+const { name, age } = getValues();
+
+console.log(name, age) */
+/* 
+console.log(console) */
 
 
+/* const user = { 
+  'name': 'Alex',
+  'address': '15th Park Avenue',
+  'age': 43,
+  'department':{
+      'name': 'Sales',
+      'Shift': 'Morning',
+      'address': {
+          'city': 'Bangalore',
+          'street': '7th Residency Rd',
+          'zip': 560001
+      }
+  }
+}
 
 
+const user2 = { 
+  'name': 'hales',
+  'address': 'illinois',
+  'age': 20
+}
 
+const myObj = {...user, ...user2};
+console.log(myObj) */
+
+
+let a = [1,2,3,4,5,5,5,6,7];
+
+let s = new Set(a);
+console.log(s)
+
+let m = new Map();
+m['name'] = 'rahul';
+
+console.log(m)
