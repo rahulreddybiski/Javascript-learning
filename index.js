@@ -630,59 +630,7 @@ for(key in user){
   console.log(user[key])
 } */
 
-const users = {
-  Alex: {
-    email: 'alex@alex.com',
-    skills: ['HTML', 'CSS', 'JavaScript'],
-    age: 20,
-    isLoggedIn: false,
-    points: 30
-  },
-  Asab: {
-    email: 'asab@asab.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-    age: 25,
-    isLoggedIn: false,
-    points: 50
-  },
-  Brook: {
-    email: 'daniel@daniel.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
-    age: 30,
-    isLoggedIn: true,
-    points: 50
-  },
-  Daniel: {
-    email: 'daniel@alex.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
-    age: 20,
-    isLoggedIn: false,
-    points: 40
-  },
-  John: {
-    email: 'john@john.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
-    age: 20,
-    isLoggedIn: true,
-    points: 50
-  },
-  Thomas: {
-    email: 'thomas@thomas.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
-    age: 20,
-    isLoggedIn: false,
-    points: 40
-  },
-  Paul: {
-    email: 'paul@paul.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
-    age: 20,
-    isLoggedIn: false,
-    points: 40
-  }
-}
-
-
+/*  */
 
 /* function manySkills(obj){
   let max=0;
@@ -788,7 +736,7 @@ const myObj = {...user, ...user2};
 console.log(myObj) */
 
 
-let a = [1,2,3,4,5,5,5,6,7];
+/* let a = [1,2,3,4,5,5,5,6,7];
 
 let s = new Set(a);
 console.log(s)
@@ -796,4 +744,61 @@ console.log(s)
 let m = new Map();
 m['name'] = 'rahul';
 
-console.log(m)
+console.log(m) */
+
+// regular expression
+
+//et pattern = 'love';
+
+/* let regExp = new RegExp(pattern);
+
+let regx = /love/gt;
+ */
+/* let str= 'i am the music , music I am but love the music';
+
+const pattern = /love/
+
+const result = pattern.test(str);
+
+console.log(result)
+
+const res2 = str.match(pattern)
+console.log(res2) */
+
+/* const txt = 'Python is the most beautiful language that a human begin has ever created.\
+I recommend python for apple a first programming language';
+
+let matchfound = txt.replace( /Python|python/g , 'javascript');
+
+console.log(matchfound)
+
+let pattern = /[Aa]pple/g;
+
+let res = txt.match(pattern)
+
+console.log(res) */
+/* let txt = 'jello';
+
+const uperCase = (text) => {
+  regExp = /^[A-Z]/;
+  if(regExp.test(text)){
+    console.log("uppercase")
+  }
+  else{
+    console.log("Lowercase")
+  }
+}
+
+uperCase(txt) */
+function creditCard(num) {
+  regExp = /\^d/;
+  if(num.match(regExp)){
+    console.log("card nuber is " + num)
+  }
+  else{
+    console.log("not a card")
+  }
+}
+creditCard("3445f")
+
+
