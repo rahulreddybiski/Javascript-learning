@@ -789,8 +789,8 @@ const uperCase = (text) => {
   }
 }
 
-uperCase(txt) */
-function creditCard(num) {
+/* uperCase(txt) */
+/* function creditCard(num) {
   regExp = /\^d/;
   if(num.match(regExp)){
     console.log("card nuber is " + num)
@@ -799,6 +799,32 @@ function creditCard(num) {
     console.log("not a card")
   }
 }
-creditCard("3445f")
+creditCard("3445f")  */
+
+/* Dom manupulation */
+/* let title = document.getElementById('title')
+
+let message = "hello my friend !"
+title.innerText = "good bye!";
 
 
+title.innerHTML =`<p> ${message} </p>`;
+title.style.color = "red"; */
+
+let red = document.getElementById('red');
+let yellow = document.getElementById('yellow');
+let green = document.getElementById('green');
+
+/* red.onclick = () =>{
+  console.log('user chosed: Rock')
+}
+
+yellow.onclick = () => console.log("clicked yellow")
+
+green.onclick = () => console.log("clicked green")
+ */
+const squares = document.querySelectorAll('.color-btn');
+
+squares.forEach(element => {
+  element.onclick = () => console.log(element.value)
+});
