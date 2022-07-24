@@ -821,10 +821,33 @@ let green = document.getElementById('green');
 
 yellow.onclick = () => console.log("clicked yellow")
 
-green.onclick = () => console.log("clicked green")
- */
+green.onclick = () => console.log("clicked green") */
 const squares = document.querySelectorAll('.color-btn');
 
+const timesClicked = {
+  'red' : 0,
+  'yellow' : 0,
+  'green' : 0
+}
+
 squares.forEach(element => {
-  element.onclick = () => console.log(element.value)
-});
+  element.innerText = 0;
+  element.onclick = () =>{
+    //console.log(element.value)
+     timesClicked[element.value] +=1;
+    element.innerText = timesClicked[element.value]
+    console.log(element.value)
+  }
+}); 
+
+function clearScores(){
+  timesClicked.red = 0;
+  timesClicked.yellow = 0;
+  timesClicked.green = 0;
+  squares.forEach(element => element.innerText = '')
+}
+
+const clearGame = document.getElementById('clear-game')
+
+clearGame.onclick = () => clearScores()
+
