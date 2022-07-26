@@ -822,7 +822,7 @@ let green = document.getElementById('green');
 yellow.onclick = () => console.log("clicked yellow")
 
 green.onclick = () => console.log("clicked green") */
-const squares = document.querySelectorAll('.color-btn');
+/* const squares = document.querySelectorAll('.color-btn');
 
 const timesClicked = {
   'red' : 0,
@@ -844,10 +844,120 @@ function clearScores(){
   timesClicked.red = 0;
   timesClicked.yellow = 0;
   timesClicked.green = 0;
-  squares.forEach(element => element.innerText = '')
+  squares.forEach(element => element.innerText = 0)
 }
 
 const clearGame = document.getElementById('clear-game')
 
-clearGame.onclick = () => clearScores()
+clearGame.onclick = () => clearScores() */
+//document.getElementById('totalbill').value = 0;
+/* let totalBill = document.getElementById('totalbill').innerText;
+totalBill = 0;
 
+document.getElementById('tippercentage').innerText = 0;
+let tipPercentage = document.getElementById('tippercentage').innerText;
+
+let perPerson = 0;
+
+let a = 1;
+let total =document.getElementById('totalpeople');
+total.value = a;
+if(document.getElementById('plus').onclick = () =>{
+  total.value += 1;
+})
+if(document.getElementById('minus').onclick = () =>{
+  if(total.value > 0){
+    total.value -= 1;
+  }
+})
+
+
+
+function calculateTotal(){
+  console.log(totalBill);
+  
+  perPerson = (totalBill * tipPercentage) + totalBill;
+  document.getElementById('perperson').innerText = perPerson;
+}
+
+const totalPerPerson = document.getElementById('calculate');
+
+totalPerPerson.onclick = () => {
+  calculateTotal()
+}
+document.getElementById('perperson').value = 0;
+
+let reset = () => {
+  document.getElementById('perperson').value = 0;
+}
+
+document.getElementById('reset').onclick =()=>
+{
+  reset();
+} */
+/* const arr = [1,2,3,4,5,6,7];
+
+function double(x){
+  return x * 2;
+}
+
+const output = arr.map((x) => x.toString(2));
+
+console.log(output) */
+
+/* class Person{
+  constructor(firstname, lastname){
+    console.log(this);
+    this.firstname = firstname;
+    this.lastname  = lastname;
+  }
+  getFullName(){
+    const fullName = this.firstname + this.lastname;
+    return fullName
+  }
+  set setFirstName(firstname){
+    return this.firstname = firstname ;
+  }
+}
+
+const person = new Person('rahul', 'reddy');
+console.log("Fullname of the person is : " + person.getFullName())
+console.log("after the name : " + person.setFirstName("srikatnh")*/
+
+// Classes Excericises
+
+class Animal{
+  constructor(name, age, color, legs){
+    this.name = name;
+    this.age =age;
+    this.color = color;
+    this.legs = legs;
+
+  }
+
+  get getName(){
+    return this.name;
+  }
+  hello(){
+    console.log("hello")
+  }
+
+}
+
+class Dog extends Animal{
+  constructor(name, age, color, legs){
+    super(name, age, color, legs);
+  }
+  hello(){
+    console.log("hi")
+  }
+}
+
+const animal = new Animal("rex", 22 , 'white', 4);
+console.log(animal);
+console.log(animal.getName);
+console.log(animal.hello())
+
+const dog = new Dog(this.name, this.age, this. color, this.legs);
+console.log(dog);
+console.log(dog.hello())
