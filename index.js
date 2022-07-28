@@ -926,7 +926,7 @@ console.log("after the name : " + person.setFirstName("srikatnh")*/
 
 // Classes Excericises
 
-class Animal{
+/* class Animal{
   constructor(name, age, color, legs){
     this.name = name;
     this.age =age;
@@ -960,4 +960,52 @@ console.log(animal.hello())
 
 const dog = new Dog(this.name, this.age, this. color, this.legs);
 console.log(dog);
-console.log(dog.hello())
+console.log(dog.hello()) */
+
+/* const usersText = `{
+  "users":[
+    {
+      "firstName":"Asabeneh",
+      "lastName":"Yetayeh",
+      "age":250,
+      "email":"asab@asb.com"
+    },
+    {
+      "firstName":"Alex",
+      "lastName":"James",
+      "age":25,
+      "email":"alex@alex.com"
+    },
+    {
+    "firstName":"Lidiya",
+    "lastName":"Tekle",
+    "age":28,
+    "email":"lidiya@lidiya.com"
+    }
+  ]
+  }`
+
+const usersObj = JSON.parse(usersText, undefined, 4)
+console.log(usersObj) */
+
+let companies = `[
+  {
+      "name" : "Big coporation",
+      "numberOfEmployess" : 10000,
+      "ceo" : "Jenny",
+      "rating" : 4
+  },
+  {
+      "name" : "small company",
+      "numberOfEmployess" : 10,
+      "ceo" : null,
+      "rating" : 3.5
+  }
+
+]`
+
+console.log(companies)
+
+console.log(JSON.parse(companies)[1].name)
+
+console.log()
