@@ -1198,7 +1198,7 @@ console.log(studentJson) */
 const text = JSON.parse(txt)
 /* console.log(text) */
 
-let a;
+/* let a;
 console.log(a)
 if(a===undefined){
   console.log("a is undefined")
@@ -1211,5 +1211,15 @@ if(a===undefined){
 }
 else{
   console.log("a is not undefined")
+} */
+
+
+function a(){
+  var b = 10;
+  c();
+  function c(){
+    console.log(b);
+  }
 }
 
+a();
