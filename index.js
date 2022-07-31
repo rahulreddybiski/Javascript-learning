@@ -1213,7 +1213,7 @@ else{
   console.log("a is not undefined")
 } */
 
-
+/* 
 function a(){
   var b = 10;
   c();
@@ -1222,4 +1222,10 @@ function a(){
   }
 }
 
-a();
+a(); */
+
+function displayName(){
+  console.log(23,this)
+}
+
+displayName()
