@@ -1224,8 +1224,43 @@ function a(){
 
 a(); */
 
-function displayName(){
+/* function displayName(){
   console.log(23,this)
 }
 
-displayName()
+displayName() */
+
+/* const grandParent = document.querySelector('.grandparent');
+const parent = document.querySelector('.parent');
+const child = document.querySelector('.child');
+
+
+grandParent.addEventListener('click', e =>{
+
+  console.log('grandparent-bubble')
+})
+setTimeout(( )=> {
+  parent.removeEventListener('click',printHi)
+},2000)
+
+
+
+parent.addEventListener('click', printHi)
+
+
+child.addEventListener('click', e =>{
+  console.log('child-bubble')
+})
+
+function printHi(){
+  console.log('HI')
+} */
+
+
+const divs = document.querySelectorAll('div');
+
+divs.forEach(div => {
+  div.addEventListener('click',() =>{
+    console.log('Hi')
+  })
+})
