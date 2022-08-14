@@ -1257,10 +1257,19 @@ function printHi(){
 } */
 
 
-const divs = document.querySelectorAll('div');
+/* const divs = document.querySelectorAll('div');
 
 divs.forEach(div => {
   div.addEventListener('click',() =>{
     console.log('Hi')
   })
-})
+}) */
+
+/* let newElement = document.createElement('input');
+
+console.dir(newElement)
+
+document.body.appendChild(newElement); */
+
+console.log(
+'hello')
