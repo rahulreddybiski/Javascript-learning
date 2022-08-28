@@ -1273,7 +1273,7 @@ document.body.appendChild(newElement); */
 
 //closures
 
-function x(){
+/* function x(){
   var a = 10;
 
   function y(){
@@ -1287,4 +1287,68 @@ var z = x()
 console.log(z)
 //......
 
-z()
+z() */
+
+/* const myName = 'Rahul';
+
+function printName(){
+  console.log(myName);
+}
+
+printName()
+ */
+
+//function statement:
+
+/* function a(){
+  console.log("a called")
+} */
+
+//function expression
+/* var b = function (){
+  console.log("b called")
+}
+a();
+b();
+ */
+//function statement also called as function declaration
+
+//ananymous function
+/* function () {
+
+} */
+
+//named function expression -  function expression with name
+
+/* var c = function d(){
+  console.log("C called")
+} */
+
+//first class functions- funtions passed as values , returned as values and assigned to a variable
+//also called first class citizens
+
+
+/* setTimeout(function () {
+  console.log("timer")
+},5000);
+
+function x(y){
+  console.log("x")
+  y();
+};
+
+x(function y(){
+  console.log("y")
+}); */
+
+//event looping and callback queues
+console.log('hello');
+
+setTimeout(function cb() {
+    console.log("callback")
+}, 5000)
+setTimeout(function cb() {
+    console.log("callback")
+}, 4000)
+
+console.log("bye")
