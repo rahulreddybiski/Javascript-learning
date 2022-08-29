@@ -1342,7 +1342,7 @@ x(function y(){
 }); */
 
 //event looping and callback queues
-console.log('hello');
+/* console.log('hello');
 
 setTimeout(function cb() {
     console.log("callback")
@@ -1351,4 +1351,36 @@ setTimeout(function cb() {
     console.log("callback")
 }, 4000)
 
-console.log("bye")
+console.log("bye") */
+
+//promises
+
+/* let promise = new Promise(function executor(resolve, reject){
+  setTimeout(function() {
+    reject(new Error("jack fell down and no food today"))
+  }, 2000);
+});
+
+const consumer = () => {
+  promise.catch(function(result){
+    console.log('failed.... '+ result)
+  })
+}
+
+consumer() */
+
+const p = new Promise((resolve, reject) =>{
+  let a = 3;
+  if(a==2){
+      resolve("a is correct")
+  }
+  else{
+      reject("a is incorrect")
+  }
+})
+
+p.then((message) => {
+  console.log(message);
+}).catch((error)=>{
+  console.log(error);
+})
