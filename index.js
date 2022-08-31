@@ -1368,7 +1368,7 @@ const consumer = () => {
 }
 
 consumer() */
-
+/* 
 const p = new Promise((resolve, reject) =>{
   let a = 3;
   if(a==2){
@@ -1383,4 +1383,28 @@ p.then((message) => {
   console.log(message);
 }).catch((error)=>{
   console.log(error);
+}) */
+
+const images = document.querySelector('.container')
+const button = document.querySelector('#btn');
+const baseUrl = 'https://jsonplaceholder.typicode.com/photos'
+button.addEventListener('click', () => {
+    let random =Math.floor(Math.random() * (500 - 0) + 0)
+    setTimeout(getNewPhoto(`${baseUrl}/${random}`),1000)
 })
+
+function getNewPhoto(ftechUrl){
+
+    fetch(ftechUrl)
+    .then((res => res.json()))
+    .then((json) => {
+        // document.body.innerHTML = data.url;
+        //console.log(json.url)
+        images.style.display = 'block';
+        document.querySelector('.newphoto').src = json.url;
+        })
+        .then(() => {
+            document.querySelector('.message').innerHTML = `<p> Boom you got a new photo, click again to get another photo</p>`
+        });
+    
+}
