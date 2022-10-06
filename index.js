@@ -1408,3 +1408,20 @@ function getNewPhoto(ftechUrl){
         });
     
 }
+
+//function currying
+//can be done usinf closures and bind
+let multiply = function (x){
+  return function (y){
+      console.log(x * y);
+  }
+}
+
+let multiplyByTwo = multiply(2);
+
+multiplyByTwo(3)
+
+
+let multiplyByThree = multiply(2);
+
+multiplyByThree(10)
